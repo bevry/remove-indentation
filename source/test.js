@@ -1,10 +1,10 @@
 'use strict'
 
-const joe = require('joe')
+const kava = require('kava')
 const { equal } = require('assert-helpers')
 const removeIndentation = require('./')
 
-joe.suite('remove-indentation', function (suite, test) {
+kava.suite('remove-indentation', function(suite, test) {
 	const tests = [
 		{
 			name: 'none',
@@ -117,13 +117,9 @@ joe.suite('remove-indentation', function (suite, test) {
 			output: '\ta\nb\n\tc'
 		}
 	]
-	tests.forEach(function ({ name, args, output }) {
-		test(name, function () {
-			equal(
-				removeIndentation(...args),
-				output,
-				name
-			)
+	tests.forEach(function({ name, args, output }) {
+		test(name, function() {
+			equal(removeIndentation(...args), output, name)
 		})
 	})
 })

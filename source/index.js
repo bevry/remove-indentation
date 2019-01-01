@@ -10,13 +10,14 @@ const detectIndentation = require('detect-indentation')
  * @throws {error} mixed spaces and tabs - thrown by: https://github.com/bevry/detect-indentation
  * @throws {error} indentation is uneven - thrown by: https://github.com/bevry/detect-indentation
  */
-function removeIndentation (source, iterations = 1) {
+function removeIndentation(source, iterations = 1) {
 	const indentation = detectIndentation(source)
 	if (!indentation) return source
 	const regexString = indentation.replace(/\t/g, '\\t')
 	const regex = new RegExp(`^${regexString}`, 'gm')
 
-	let result, lastResult = source
+	let result,
+		lastResult = source
 	if (iterations === 0) {
 		lastResult = source
 		while (true) {
@@ -26,8 +27,7 @@ function removeIndentation (source, iterations = 1) {
 			}
 			lastResult = result
 		}
-	}
-	else {
+	} else {
 		for (let i = 0; i < iterations; i++) {
 			lastResult = result = lastResult.replace(regex, '')
 		}
