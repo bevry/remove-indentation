@@ -1,6 +1,6 @@
 {
   "name": "remove-indentation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Utility to remove indentation from a string",
   "homepage": "https://github.com/bevry/remove-indentation",
   "license": "MIT",
