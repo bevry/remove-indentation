@@ -1,8 +1,6 @@
-'use strict'
-
-const kava = require('kava')
-const { equal } = require('assert-helpers')
-const removeIndentation = require('./')
+import kava from 'kava'
+import { equal } from 'assert-helpers'
+import removeIndentation from './'
 
 kava.suite('remove-indentation', function (suite, test) {
 	const tests = [
@@ -119,6 +117,7 @@ kava.suite('remove-indentation', function (suite, test) {
 	]
 	tests.forEach(function ({ name, args, output }) {
 		test(name, function () {
+			// @ts-ignore
 			equal(removeIndentation(...args), output, name)
 		})
 	})

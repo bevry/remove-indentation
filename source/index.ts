@@ -1,39 +1,36 @@
-'use strict'
-
-const detectIndentation = require('detect-indentation')
+import detectIndentation from 'detect-indentation'
 
 /**
  * Removes indentation from the source string
- * @param {string} source
- * @param {number} [iterations=1] - how many indentation iterations do we wish to remove? use 0 for all
- * @returns {string}
- * @throws {error} mixed spaces and tabs - thrown by: https://github.com/bevry/detect-indentation
- * @throws {error} indentation is uneven - thrown by: https://github.com/bevry/detect-indentation
+ * @param source
+ * @param iterations - how many indentation iterations do we wish to remove? use 0 for all
+ * @throws {Error} mixed spaces and tabs - thrown by: https://github.com/bevry/detect-indentation
+ * @throws {Error} indentation is uneven - thrown by: https://github.com/bevry/detect-indentation
  */
-function removeIndentation(source, iterations = 1) {
+export default function removeIndentation(
+	source: string,
+	iterations: number = 1
+): string {
+	// check is indented
 	const indentation = detectIndentation(source)
 	if (!indentation) return source
+
+	// replace the indentation
 	const regexString = indentation.replace(/\t/g, '\\t')
 	const regex = new RegExp(`^${regexString}`, 'gm')
-
-	let result,
-		lastResult = source
+	let result = source
 	if (iterations === 0) {
-		lastResult = source
 		while (true) {
-			result = lastResult.replace(regex, '')
-			if (result === lastResult) {
-				break
-			}
-			lastResult = result
+			const next = result.replace(regex, '')
+			if (result === next) break
+			result = next
 		}
 	} else {
 		for (let i = 0; i < iterations; i++) {
-			lastResult = result = lastResult.replace(regex, '')
+			result = result.replace(regex, '')
 		}
 	}
 
+	// return the final result
 	return result
 }
-
-module.exports = removeIndentation
