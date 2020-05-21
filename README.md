@@ -58,7 +58,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/remove-indentation/^4.0.0'
+    import pkg from '//cdn.pika.dev/remove-indentation/^4.1.0'
 </script>
 ```
 
@@ -66,7 +66,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/remove-indentation@^4.0.0'
+    import pkg from '//unpkg.com/remove-indentation@^4.1.0'
 </script>
 ```
 
@@ -74,7 +74,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/remove-indentation@4.0.0'
+    import pkg from '//dev.jspm.io/remove-indentation@4.1.0'
 </script>
 ```
 
