@@ -547,10 +547,10 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-detect-indentation@5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/detect-indentation/-/detect-indentation-5.4.0.tgz#6f7d9c632a8d7c1f676c7f55ce7edc9467b9c168"
-  integrity sha512-f9yXQ6Ejd8yJVxNi3wyRIwfuQyYFk9npMXyNbT5x3sI/wex7zTPmd8woLclkvwHoNTFKcTqJRdf9CtWC8U+atA==
+detect-indentation@5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/detect-indentation/-/detect-indentation-5.8.0.tgz#ad5030fc6c461e2490489be9cced7ae483dd60b6"
+  integrity sha512-Ls7v7chh18iYqU1PHyBGHTnV1wNiudtcDc++de6SrRV5uY1lPpJ9QgT+H7X3N22oBH2keYBeVmjpC2nzGvdJfg==
 
 diff@^4.0.2:
   version "4.0.2"
