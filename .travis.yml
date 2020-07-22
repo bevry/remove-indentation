@@ -9,23 +9,23 @@ node_js:
 matrix:
   fast_finish: true
   allow_failures: []
-cache: yarn
+cache: npm
 install:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-install.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-install.bash)"
 before_script:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-verify.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-verify.bash)"
 after_success:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/surge.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/surge.bash)"
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-publish.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-publish.bash)"
 notifications:
   email:
     recipients: >-
-      EaKUYMtIO58ayp2STAuikUz/4S9t5KWAYa3EVcX3V02WfhqNuEMwVcsO8Py9Sipv68JVnOV8Q2XFMfcqQB5SoBLOPaSW/p5TlhwBKXimiB2UuNQKwFieURr7HSOpcoiLVrRq2xEG1ZOZ1K5QSH3yR7Xz3T/52lNXsnXQhZDckzCfEYnnX7KiSvygBBC50f6a7aB8qbIiGvAzE2u27HjGFiIOHnaW4PYPrIKSetzMWxOdnCgeZeS0EWdiU6cYTqzL9T0MOAICKOS8gkqC4+IXjqiXRbLkhvg6KdLHpnUwUTNZ7MN8vIhCeYOBywxmoyElhsSisjH+oQNgGWw14/I4ZvWbMFp5p6Pj5E4cm6IdVbw89LE8PoJme4CKbWS4FoyehNNzp9sOjl2d/KQG4RUmjMhBSv+/Q3NkJ+tHJhGTzebUMEIYgzT+/n07cNW7QnBeJens16xa0Og0ZFXi3sohqShVlllEOmmISX+N3n87S5Yf0IvSRIJwFJKu9qYSN843oUCImkAsRVPwg/oxO8y0SAPScN7dhzFEa9YuIXG2vVA+2NkfQXTduEY8k/Qom6r7MbBfMXN1iFfrz6AqWguhcrn89PBxVU3ZDelDaDS+mpu+ava3lOXP1R2NYEbgTmhDn51mtnbYcB18YO+XBhrn81/6ZoyVFjgA4xBswJ6/vhY=
+      T9awmzJjbdjjm6Mkp8U2teYZFQ8iJ52wrD16JB+paHGapG0/pa2vXyv+e7EeUuYXo1EL24jBNbmOZJ2iLKFpmkfd6KG0tcndxBx+WYIsaOf1a/6b1RPXmEkC60IL5V6dvAMcywyvjXr5on2g8j4STme9JP/qQ9JYR249pcv78I9AdnI4utz2VsTrYEByEa6i2czO0VT3zglM6/BOsSq8rZMkPiDM2f9VFf9/+kiuq+jHKfyEjA4LtNM+MfsIPl/sZCEgSb+Q9t+huenZylcDEti+oyJhrvG/iTqb29rd0nx+cKAGCmfRW8AfOdkSfm23tKpi9pjbDv+m717hiaCb98upCdZSoPZmN8aYa/Gg9xZ6hPYZJ5RjBpgV7qQBvKs+5R99xHX4y62+Rt+n8gwxw65B8x6fMyBPsN8uIAz6KGruQ2iXMILSFt5Z9fKa5xrGNEOgd5RXkg+8aC8mgSji6Zyp2HZUMCJeyCxDj3ykzziIEu6Ad2ZMlEEn1TeVhctnePU0SkJW8VhvluFqxowR4LPOZqzhsQlDQ7nNjuY82KrYVW0Zvi4A456v5pivOAtea01beNNPI31i3rnWAH6qj3vDuQzhZDRuwAQp9tAGctepp1yPdyr+CPRnrIXU2MR0nSGAm3logH/CGmmYRjwdbj/FbPfrojM9BZnZDrlRppo=
