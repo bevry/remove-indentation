@@ -1,6 +1,6 @@
 import kava from 'kava'
 import { equal } from 'assert-helpers'
-import removeIndentation from './'
+import removeIndentation from './index.js'
 
 kava.suite('remove-indentation', function (suite, test) {
 	const tests = [
