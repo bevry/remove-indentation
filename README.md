@@ -39,7 +39,7 @@ Utility to remove indentation from a string
 
 ## Usage
 
-[Complete API Documentation.](http://master.remove-indentation.bevry.surge.sh/docs/globals.html)
+[Complete API Documentation.](http://master.remove-indentation.bevry.surge.sh/docs/)
 
 [Tests.](https://github.com/bevry/remove-indentation/blob/master/source/test.js)
 
@@ -58,7 +58,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/remove-indentation@^4.15.0'
+    import pkg from '//cdn.skypack.dev/remove-indentation@^4.16.0'
 </script>
 ```
 
@@ -66,7 +66,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/remove-indentation@^4.15.0'
+    import pkg from '//unpkg.com/remove-indentation@^4.16.0'
 </script>
 ```
 
@@ -74,7 +74,7 @@ Utility to remove indentation from a string
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/remove-indentation@4.15.0'
+    import pkg from '//dev.jspm.io/remove-indentation@4.16.0'
 </script>
 ```
 
