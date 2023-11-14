@@ -9,7 +9,7 @@ import detectIndentation from 'detect-indentation'
  */
 export default function removeIndentation(
 	source: string,
-	iterations: number = 1,
+	iterations: number = 1
 ): string {
 	// check is indented
 	const indentation = detectIndentation(source)
